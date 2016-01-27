@@ -1,0 +1,18 @@
+
+  <h1> HELLLLO BLIIISSSS </h1>
+
+<%= link_to "Add New Image", new_image_url %>
+
+
+
+  <% @images.each do |image| %>
+    <%= image.title %>
+    <%= image.author %>
+      <%= link_to image_tag(image.url), "/images/#{image.id}" %>
+  <!-- <a href="/images/#{image.id}">
+
+   <img src="<%= image.url %>">
+
+ </a> -->
+
+  <% end %>

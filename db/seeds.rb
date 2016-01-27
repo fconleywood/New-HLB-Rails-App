@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Image.create!(
+:title => "Nobody Will Ever Believe You",
+:author => "Bill Murray",
+:url => "http://vignette2.wikia.nocookie.net/ghostbusters/images/1/11/Bill_Murray.jpeg"
+)

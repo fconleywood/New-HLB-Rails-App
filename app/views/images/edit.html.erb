@@ -1,0 +1,21 @@
+<h1>Edit Image if you really have too...</h1>
+
+<%= link_to "Back to Homepage", images_url %>
+
+<%= form_for @image do |f| %>
+<p>
+    <%= f.label :title %> <br>
+    <%= f.text_field :title %>
+</p>
+<p>
+    <%= f.label :author %> <br>
+    <%= f.text_field :author %>
+</p>
+<p>
+  <%= f.label :url %> <br>
+  <%= f.text_field :url %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
